@@ -72,14 +72,24 @@ h1, h2, h3, h4, h5 {
     height: auto;
 }
 
+    @media(max-width: 800px) {
+        .container {
+            width: 770px;
+            background: black;
+        }
+    }
+
 .container .nav-bar {
     display: flex;
-    /* border: 2px solid gold; */
     align-items: center;
     margin-top: 1%;
     margin-bottom: 1%;
     justify-content: space-between;
 }
+
+    @media(max-width: 800px) {
+
+    }
 
 .container .nav-bar .links {
     display: flex;
