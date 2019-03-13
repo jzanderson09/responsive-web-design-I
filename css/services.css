@@ -1,0 +1,213 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container {
+	margin: 20px auto;
+	text-align: center;
+    width: 1000px;
+    height: auto;
+}
+
+.container .nav-bar {
+    display: flex;
+    /* border: 2px solid gold; */
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    justify-content: space-between;
+}
+
+.container .nav-bar .links {
+    display: flex;
+    width: 68%;
+    justify-content: space-between;
+}
+
+.container .nav-bar .links a {
+    color: gray;
+    text-decoration: none;
+}
+
+.container .nav-bar .links a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.container .nav-bar .logo {
+    justify-content: flex-end;
+    margin-right: .5%;
+}
+
+.container .banner {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.container .banner .services-img {
+    width: 100%;
+}
+
+.container .banner .services-img img {
+    width: 100%;
+}
+
+.container .banner h1 {
+    justify-content: flex-start;
+    margin-top: 2.5%;
+    font-size: 24px;
+}
+
+.container .banner p {
+    text-align: left;
+    margin-bottom: 3%;
+}
+
+.container .main-content {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 750px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+}
+
+.container .main-content .info-boxes {
+    border: 1px solid black;
+    background: rgb(240, 239, 239);
+    width: 48%;
+    height: 28%;
+    margin-top: 3%;
+    text-align: left;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+}
+
+.container .main-content .info-boxes p {
+    margin-bottom: 4%;
+    line-height: 1.2;
+}
+
+.container .main-content .info-boxes button {
+    background: white;
+    border: 1px solid black;
+    border-radius: 6%;
+    padding: 1%;
+    width: 29%;
+    height: 17%;
+}
+
+.container .main-content .info-boxes button:hover {
+    background: black;
+	color: white;
+	cursor: pointer;
+}
+
+.container .main-content .info-boxes button:active {
+    transform: translateX(4px);
+}
+
+.container .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .bottom div {
+    width: 50%;
+}
+
+.container .bottom div h3 {
+text-align: left;
+margin-top: 7%;
+}
+
+.container .bottom div p {
+    text-align: left;
+}
+
+.container .bottom div ul {
+    list-style-type: square;
+    
+}
+
+.container .bottom div li {
+    text-align: left;
+    margin-left: 4%;
+    margin-top: 2%;
+
+}
+
+.container .bottom .services-info-img {
+    width: 477px;
+    height: 300px;
+    margin-top: 3.5%;
+}
+
+.container footer {
+    margin-top: 10%;
+}
