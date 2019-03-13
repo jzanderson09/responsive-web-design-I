@@ -70,8 +70,7 @@ h1, h2, h3, h4, h5 {
 .container {
 	margin: auto;
 	text-align: center;
-	width: 1024px;
-	height: 1388px;
+	width: 1000px;
 }
 
 	@media(max-width: 800px) {
@@ -219,8 +218,13 @@ header .header-right img {
 	margin-top: 6.8%;
     text-align: left;
     margin-right: 14.2%;
-	
 }
+
+	@media(max-width: 800px) {
+		.container .main-content {
+			margin: 8% 0 5% 2%;
+		}
+	}
 
 .main-content .top-content {
 	display: flex;
@@ -229,15 +233,34 @@ header .header-right img {
     line-height: 1.2;
 }
 
+	@media(max-width: 800px) {
+		.main-content .top-content {
+			margin: .5% 0;
+		}
+	}
+
 .main-content .top-content .info-box {
 	width: 49%;
 	display: inline-block;
 	margin: 30px auto;
 }
 
+	@media(max-width: 800px) {
+		.main-content .top-content .info-box {
+			width: 46%;
+			margin: 3.8% 4% 4% 0%;
+		}
+	}
+
 .main-content .top-content .info-box:first-child {
 	margin-left: 0;
 }
+
+	@media(max-width: 800px) {
+		.main-content .top-content .info-box:first-child {
+			margin: auto;
+		}
+	}
 
 .main-content .middle-img {
 	width: 100%;
@@ -251,6 +274,12 @@ header .header-right img {
     line-height: 1.05;
     padding-bottom: 2.8%;
 }
+
+	@media(max-width: 800px) {
+		.main-content .bottom-content {
+			margin-bottom: 1.7%;
+		}
+	}
 
 .main-content .bottom-content .info-box:first-child {
 	margin-left: 0;
@@ -267,6 +296,19 @@ header .header-right img {
 	margin: 3% auto;
 	line-height: 1.0624;
 }
+
+	@media(max-width: 800px) {
+		.container .contact-info {
+			margin: auto 3.5%;
+		}
+	}
+
+	@media(max-width: 800px) {
+		.container footer {
+			margin-left: 12.5%;
+    		margin-top: 5%;
+		}
+	}
 
 .container footer p {
 	text-align: center;
