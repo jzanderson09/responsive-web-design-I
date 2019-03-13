@@ -67,16 +67,24 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
+
 .container {
 	margin: auto;
 	text-align: center;
 	width: 1000px;
+	/*Not exactly sure what I did here.  I went a little crazy
+	with the Pixel Perfect extension, so this margin-left is kind of
+	my hot fix.  The auto margin wasn't working on my container and 
+	everything inside of the container was aligned the way I wanted it to,
+	so I went with it.*/
+	margin-left: 17%;
 }
 
 	@media(max-width: 800px) {
 		.container {
 		width: 800px;
 		height: auto;
+		margin: auto;
 		}
 	}
 
@@ -84,6 +92,7 @@ h1, h2, h3, h4, h5 {
 			.container {
 				width: 500px;
 				height: auto;
+				margin: auto;
 			}
 		}
 
